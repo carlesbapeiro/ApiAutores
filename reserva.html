@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Nova Reserva</title>
+    <script src="creacioReserva.js"></script>
+</head>
+<body>
+
+        
+            <form>
+                <p>Usuari: </p><input class="form-control" id="usuari" type="text" maxlength="20" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$">
+                <p>Llibre: </p><input class="form-control" id="llibre"type="text" maxlength="50" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$">
+                <p>Fecha: </p><input class="form-control" id="fecha"type="date">
+                <p>Fecha de Devolucion: </p><input class="form-control" id="fechaDevolucion"type="date" readonly="readonly">
+
+                <br>
+                <button class="btn btn-warning" id="enviar">Crear una reserva nova</button>
+                <a class="btn btn-warning" href="index.html">Tornar</a>
+    
+        
+            </form>
+
+            <h5 id="titolError"></h5>
+            <p id="missatgeError"></p>
+    
+</body>
+</html>

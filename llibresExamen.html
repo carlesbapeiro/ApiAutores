@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>API-llibres</title>
+    
+    <script src="mostrarLlibresExamen.js"></script>
+    <!--<script src="filtre.js"></script>-->
+    
+
+
+</head>
+<body class="text-center">
+
+
+        <h1 class="mb-3">Api Llibres</h1>
+
+        <a  class="btn btn-dark mb-3"href="index.html">Pagina principal</a>
+
+        <h3 id="nomUser"></h3>
+        <small id=emailUser></small>
+        <br>
+        <br>
+        <input type="text"  id="paraula" placeholder="Filtrar Llibres">
+        <button id="buscar" onclick="carregarLlibres()">Buscar</button>
+
+
+
+
+        <br>
+        <table class="table table-bordered table-striped" id= "llistaLlibres">
+                
+
+        </table>
+
+
+
+
+
+</body>
+</html>

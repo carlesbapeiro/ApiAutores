@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Nou Autor</title>
+    <script src="creacioAutors.js"></script>
+</head>
+<body>
+
+        <form>
+            
+                <p>Nom: </p><input class="form-control" id="nom" type="text" maxlength="20" pattern="^([a-zA-Z]|\s)*$">
+                <p>Any naixement: </p><input class="form-control" id="any"type="number" maxlength="4" pattern="[0-9]{0,4}">
+
+                <br>
+                <button class="btn btn-warning" id="enviar">Crear un autor nou</button>
+                <a class="btn btn-warning" href="autors.html">Tornar</a>
+    
+        </form>
+
+            <p id="missatgeError"></p>
+    
+</body>
+</html>
